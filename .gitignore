@@ -47,3 +47,15 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+.positai
+# Generated project outputs
+output/
+data/adam/
+data/sdtm/
+reports/*.html
+
+# Plot/image outputs
+*.png
+
+# Keep empty folders
+!.gitkeep

@@ -1,0 +1,42 @@
+---
+title: "Clinical PK TLF Report"
+format:
+  html:
+    toc: true
+    theme: cosmo
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+library(tidyverse)
+library(knitr)
+
+conc_summary <- read_csv("../output/tables/concentration_summary.csv")
+pk_param_summary <- read_csv("../output/tables/pk_parameter_summary.csv")
+pk_listing <- read_csv("../output/listings/pk_concentration_listing.csv")
+```
+
+# Table 1: Concentration Summary
+
+```{r}
+kable(conc_summary)
+```
+
+# Table 2: PK Parameter Summary
+
+```{r}
+kable(pk_param_summary)
+```
+
+# Listing 1: PK Concentration Listing
+
+```{r}
+kable(pk_listing)
+```
+
+# Figure 1: Spaghetti Plot
+
+![](../output/plots/spaghetti_plot.png)

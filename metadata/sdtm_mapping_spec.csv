@@ -1,0 +1,12 @@
+DOMAIN,VARIABLE,LABEL,SOURCE,DERIVATION
+DM,STUDYID,Study Identifier,Assigned,"Set to PK001"
+DM,USUBJID,Unique Subject Identifier,DM raw,"STUDYID-SUBJID"
+DM,SEX,Sex,DM raw,"Direct mapping"
+DM,RACE,Race,DM raw,"Direct mapping"
+EX,EXTRT,Name of Treatment,EX raw,"Direct mapping"
+EX,EXDOSE,Dose,EX raw,"Direct mapping"
+EX,EXSTDTC,Start Date/Time of Treatment,EX raw,"Combine EXSTDAT and EXSTTIM"
+PC,PCSTRESN,Numeric Result in Standard Units,PC raw,"Convert PCORRES to numeric"
+PC,PCBLQ,Below Limit of Quantification Flag,PC raw,"Y if PCSTRESN < LLOQ"
+VS,VSSTRESN,Numeric Result in Standard Units,VS raw,"Convert VSORRES to numeric"
+LB,LBSTRESN,Numeric Result in Standard Units,LB raw,"Convert LBORRES to numeric"

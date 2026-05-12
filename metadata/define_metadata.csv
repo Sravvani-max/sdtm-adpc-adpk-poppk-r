@@ -1,0 +1,15 @@
+DATASET,VARIABLE,LABEL,TYPE,ORIGIN,SOURCE,DERIVATION
+ADSL,STUDYID,Study Identifier,Char,Assigned,DM,Set to PK001
+ADSL,USUBJID,Unique Subject Identifier,Char,Derived,DM,STUDYID-SUBJID
+ADSL,TRT01P,Planned Treatment for Period 01,Char,Derived,EX,Derived from EXTRT
+ADSL,TRTSDTC,Treatment Start Date/Time,Char,Derived,EX,Derived from EXSTDTC
+ADSL,WEIGHTBL,Baseline Weight,Num,Derived,VS,VSTESTCD = WEIGHT
+ADPC,PARAMCD,Parameter Code,Char,Derived,PC,Derived from PCTESTCD
+ADPC,PARAM,Parameter,Char,Derived,PC,Derived from PCTEST
+ADPC,AVAL,Analysis Value,Num,Derived,PC,Derived from PCSTRESN
+ADPC,AVALU,Analysis Value Unit,Char,Derived,PC,Derived from PCSTRESU
+ADPC,ATPT,Analysis Timepoint,Char,Derived,PC,Derived from PCTPT
+ADPC,ATPTN,Analysis Timepoint Numeric,Num,Derived,PC,Derived from PCTPTNUM
+ADPC,BLQFL,Below Limit of Quantification Flag,Char,Derived,PC,Derived from PCBLQ
+ADPK,PARAMCD,Parameter Code,Char,Derived,ADPC,CMAX and TMAX
+ADPK,AVAL,Analysis Value,Num,Derived,ADPC,Derived PK parameter value

@@ -1,0 +1,13 @@
+SUBJID,LBTESTCD,LBTEST,LBORRES,LBORRESU,LBDAT,LBTIM,VISIT,VISITNUM
+101,CREAT,Creatinine,0.8,mg/dL,2026-01-01,07:20,Day 1,1
+101,ALT,Alanine Aminotransferase,22,U/L,2026-01-01,07:20,Day 1,1
+101,AST,Aspartate Aminotransferase,25,U/L,2026-01-01,07:20,Day 1,1
+102,CREAT,Creatinine,0.7,mg/dL,2026-01-01,07:35,Day 1,1
+102,ALT,Alanine Aminotransferase,18,U/L,2026-01-01,07:35,Day 1,1
+102,AST,Aspartate Aminotransferase,21,U/L,2026-01-01,07:35,Day 1,1
+103,CREAT,Creatinine,1.1,mg/dL,2026-01-01,07:50,Day 1,1
+103,ALT,Alanine Aminotransferase,30,U/L,2026-01-01,07:50,Day 1,1
+103,AST,Aspartate Aminotransferase,28,U/L,2026-01-01,07:50,Day 1,1
+104,CREAT,Creatinine,0.6,mg/dL,2026-01-01,08:05,Day 1,1
+104,ALT,Alanine Aminotransferase,16,U/L,2026-01-01,08:05,Day 1,1
+104,AST,Aspartate Aminotransferase,19,U/L,2026-01-01,08:05,Day 1,1

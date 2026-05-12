@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Define>
+  <StudyName>Clinical PK SDTM ADaM R Portfolio</StudyName>
+  <Description>Simplified define.xml-style metadata for portfolio demonstration</Description>
+  <Datasets>
+    <Dataset Name="ADSL">
+      <Variable Name="STUDYID" Label="Study Identifier" Type="Char" Origin="Assigned" Source="DM" Derivation="Set to PK001" />
+      <Variable Name="USUBJID" Label="Unique Subject Identifier" Type="Char" Origin="Derived" Source="DM" Derivation="STUDYID-SUBJID" />
+      <Variable Name="TRT01P" Label="Planned Treatment for Period 01" Type="Char" Origin="Derived" Source="EX" Derivation="Derived from EXTRT" />
+      <Variable Name="TRTSDTC" Label="Treatment Start Date/Time" Type="Char" Origin="Derived" Source="EX" Derivation="Derived from EXSTDTC" />
+      <Variable Name="WEIGHTBL" Label="Baseline Weight" Type="Num" Origin="Derived" Source="VS" Derivation="VSTESTCD = WEIGHT" />
+    </Dataset>
+    <Dataset Name="ADPC">
+      <Variable Name="PARAMCD" Label="Parameter Code" Type="Char" Origin="Derived" Source="PC" Derivation="Derived from PCTESTCD" />
+      <Variable Name="PARAM" Label="Parameter" Type="Char" Origin="Derived" Source="PC" Derivation="Derived from PCTEST" />
+      <Variable Name="AVAL" Label="Analysis Value" Type="Num" Origin="Derived" Source="PC" Derivation="Derived from PCSTRESN" />
+      <Variable Name="AVALU" Label="Analysis Value Unit" Type="Char" Origin="Derived" Source="PC" Derivation="Derived from PCSTRESU" />
+      <Variable Name="ATPT" Label="Analysis Timepoint" Type="Char" Origin="Derived" Source="PC" Derivation="Derived from PCTPT" />
+      <Variable Name="ATPTN" Label="Analysis Timepoint Numeric" Type="Num" Origin="Derived" Source="PC" Derivation="Derived from PCTPTNUM" />
+      <Variable Name="BLQFL" Label="Below Limit of Quantification Flag" Type="Char" Origin="Derived" Source="PC" Derivation="Derived from PCBLQ" />
+    </Dataset>
+    <Dataset Name="ADPK">
+      <Variable Name="PARAMCD" Label="Parameter Code" Type="Char" Origin="Derived" Source="ADPC" Derivation="CMAX and TMAX" />
+      <Variable Name="AVAL" Label="Analysis Value" Type="Num" Origin="Derived" Source="ADPC" Derivation="Derived PK parameter value" />
+    </Dataset>
+  </Datasets>
+</Define>

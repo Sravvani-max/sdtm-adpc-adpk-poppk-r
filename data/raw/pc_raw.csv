@@ -1,0 +1,9 @@
+SUBJID,PCTESTCD,PCTEST,PCSPEC,PCORRES,PCORRESU,LLOQ,PCDAT,PCTIM,VISIT,VISITNUM,PCTPT,PCTPTNUM
+101,DRUGA,Drug A Concentration,PLASMA,0,ng/mL,0.5,2026-01-01,08:00,Day 1,1,Pre-dose,0
+101,DRUGA,Drug A Concentration,PLASMA,12.5,ng/mL,0.5,2026-01-01,09:00,Day 1,1,1 Hour Post-dose,1
+101,DRUGA,Drug A Concentration,PLASMA,28.7,ng/mL,0.5,2026-01-01,10:00,Day 1,1,2 Hours Post-dose,2
+101,DRUGA,Drug A Concentration,PLASMA,18.4,ng/mL,0.5,2026-01-01,12:00,Day 1,1,4 Hours Post-dose,4
+102,DRUGA,Drug A Concentration,PLASMA,0.2,ng/mL,0.5,2026-01-01,08:15,Day 1,1,Pre-dose,0
+102,DRUGA,Drug A Concentration,PLASMA,10.1,ng/mL,0.5,2026-01-01,09:15,Day 1,1,1 Hour Post-dose,1
+102,DRUGA,Drug A Concentration,PLASMA,24.9,ng/mL,0.5,2026-01-01,10:15,Day 1,1,2 Hours Post-dose,2
+102,DRUGA,Drug A Concentration,PLASMA,16.2,ng/mL,0.5,2026-01-01,12:15,Day 1,1,4 Hours Post-dose,4
